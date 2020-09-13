@@ -1,0 +1,11 @@
+{
+  "name": "ionic-plugin-video-upload",
+  "version": "1.0.0",
+  "description": "Cordova Plugin for the video upload and live broadcast",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "",
+  "license": "ISC"
+}
