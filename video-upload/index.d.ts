@@ -1,4 +1,5 @@
 import { IonicNativePlugin } from '@ionic-native/core';
+import { Observable } from 'rxjs';
 /**
  * Options for the video recording & upload feature.
  */
@@ -79,6 +80,11 @@ export declare class VideoUploadOriginal extends IonicNativePlugin {
      * @param rtmpEndpoint {string} live stream endpoint that you will send the RTMP to.
      */
     startBroadcast(rtmpEndpoint: string): void;
+    /**
+     * Get notified when the screen is captured
+     * @returns {Observable<any>} Returns an observable.
+     */
+    subscribeCaptured(): Observable<any>;
 }
 
 export declare const VideoUpload: VideoUploadOriginal;
