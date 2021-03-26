@@ -85,6 +85,17 @@ export declare class VideoUploadOriginal extends IonicNativePlugin {
      * @returns {Observable<any>} Returns an observable.
      */
     subscribeCaptured(): Observable<any>;
+    /**
+     * Get notified when the screen is captured
+     * @returns {Observable<any>} Returns an observable.
+     */
+    unsubscribeCaptured(): Observable<any>;
+    /**
+     * Start the video upload plugin
+     * @param pluginType {string} Video Upload Plugin feature setting options. All are required.
+     * @return {Promise<any>} Returns a promise that resolves when something happens
+     */
+    getCapturing(): Promise<any>;
 }
 
 export declare const VideoUpload: VideoUploadOriginal;
