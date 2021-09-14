@@ -69,7 +69,7 @@ export declare class VideoUploadOriginal extends IonicNativePlugin {
      * @param pluginType {string} Video Upload Plugin feature setting options. All are required.
      * @return {Promise<any>} Returns a promise that resolves when something happens
      */
-    startUpload(pluginType: string): Promise<any>;
+    startUpload(pluginType: string, progressListener: (result: any) => {}): Promise<any>;
     /**
      * Initialize the live stream plugin
      * @param options {LiveOptions} live stream broadcaster feature camera preview options. All are required.
